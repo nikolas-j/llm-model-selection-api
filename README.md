@@ -2,7 +2,7 @@
 
 An smart LLM routing system that automatically classifies prompt complexity and selects the most cost-effective model, reducing API costs by up to 40-80% while maintaining response quality. Built with FastAPI and designed for easy integration into existing production workflows.
 
-![App Screenshot](https://github.com/nikolas-j/Smart-LLM-Model_Selection-API/screenshot/smart_model_select.png)
+![Dashboard](screenshot/smart_model_select.png)
 
 ## Purpose
 
