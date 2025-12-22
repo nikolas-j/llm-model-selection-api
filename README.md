@@ -1,6 +1,6 @@
 # Smart Model Selection API
 
-An smart LLM routing system that automatically classifies prompt complexity and selects the most cost-effective model, reducing API costs by up to 40-80% while maintaining response quality. Built with FastAPI and designed for easy integration into existing production workflows.
+An smart LLM routing system that automatically classifies prompt complexity and selects the most cost-effective model, reducing API costs by up to 30-80% while maintaining response quality. Built with FastAPI and designed for easy integration into existing production workflows.
 
 ![Dashboard](screenshot/smart_model_select.png)
 
@@ -16,7 +16,7 @@ LLM API costs can quickly spiral out of control when using premium models for ev
 
 ## Cost Savings
 
-The classifier adds ~2-8 seconds of extra latency but delivers significant savings:
+The classifier adds ~2-10 seconds of extra latency depending on task complexity and input propmt length, but delivers significant savings:
 
 - **Low complexity prompts** → gpt-5-nano ($0.05/$0.40 per 1M tokens)
 - **Medium complexity** → gpt-5-mini ($0.25/$0.60 per 1M tokens)  
