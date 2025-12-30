@@ -1,6 +1,6 @@
 # Smart Model Selection API
 
-An smart LLM routing system that automatically classifies prompt complexity and selects the most cost-effective model, reducing API costs by up to 30-80% while maintaining response quality. Built with FastAPI and designed for easy integration into existing production workflows.
+An LLM routing system that automatically classifies prompt complexity and selects the most cost-effective model, reducing API costs by up to 30-80% depending on task complexity, while maintaining response quality. Built with FastAPI and designed for easy integration into existing production workflows.
 
 ![Dashboard](screenshot/smart_model_select.png)
 
@@ -42,23 +42,13 @@ result = response.json()
 # Returns: model, complexity, confidence, classification_latency, output
 ```
 
-The API handles everything: classification, model selection, execution, and response.
-
-## 📊 Features
-
-- **FastAPI Backend**: High-performance async API with automatic OpenAPI docs
-- **Streamlit Dashboard**: Real-time visualization of model usage and cost savings
-- **Rate Limiting**: Built-in protection with configurable limits (SlowAPI)
-- **Token Tracking**: Estimates and tracks input/output tokens per model
-- **Sticky Savings Panel**: Always-visible cost metrics that follow you as you scroll
-- **Docker Ready**: One-command deployment with docker-compose
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: FastAPI, OpenAI SDK
 - **Frontend**: Streamlit (optional dashboard)
 - **Deployment**: Docker, uv package manager
 - **Models**: OpenAI GPT-5-nano/mini/5
+- **Docker**: One-command deployment with docker-compose
 
 ## Quick Start
 
@@ -145,7 +135,7 @@ The system uses a two-stage process:
 
 ## Security
 
-- API keys managed via environment variables (never committed)
+- API keys managed via environment variables
 - CORS configuration for frontend access control
 - Rate limiting to prevent abuse
 - Input validation with Pydantic schemas
@@ -156,8 +146,5 @@ MIT
 
 ## Contributing
 
-This is a production-ready template. Fork it, customize the classification logic for your use case.
+Deploy using docker, setup production endpoints and customize the classification logic for your use case.
 
----
-
-**Built for optimizing LLM API usage to save on API costs.**
